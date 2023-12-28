@@ -29,12 +29,13 @@ $(document).ready(function() {
             const cidade = resposta.localidade;
             const estado = resposta.uf;
             const endereço = `${logradouro}, ${bairro} - ${cidade} - ${estado}`;
-            $('#endereço').val(endereço)
+            $('#endereco').val(endereço)
+            
             setTimeout (function() {
 
                 $(botao).find('i').removeClass('d-none');
                 $(botao).find('span').addClass('d-none');
-            }, 4000);
+            }, 2000);
             
         })
     })
